@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<c3p0-config>
+	<default-config>
+    　　 <!--mysql数据库连接的各项参数 -->
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/CourseDesign?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC
+		</property>
+		<property name="user">root</property>
+		<property name="password">123456789</property>
+		<!--配置数据库连接池的最小连接接数、最大连接数、初始连接数 -->
+		<property name="maxPoolSize">15</property>
+		<property name="minPoolSize">5</property>
+		<property name="initialSize">5</property>
+		<property name="acquireIncrement">5</property>
+	</default-config>
+</c3p0-config>
